@@ -1,0 +1,155 @@
+/* Overall Page Styles */
+.gamesPage {
+    font-family: 'Georama', sans-serif; /* Consistent font across all pages */
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; /* Full viewport height */
+    background: #FFFFFF; /* Consistent background color */
+}
+
+/* Header Styles */
+.header {
+    width: 100%;
+    height: 100px;
+    background: #424A44; /* Matching dark background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img, .userIcon img {
+    width: 100px;
+    height: 100px; /* Same size as homepage */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navButton, .nav-link-custom { /* Ensuring link appearance matches button appearance */
+    background: #AE1111;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Optional: Match font size as per homepage */
+    border-radius: 5px; /* Optional: Adds rounded corners for a button-like appearance */
+}
+
+.navButton.active, .nav-link-custom.active {
+    background: #882222; /* Darker shade for active state */
+}
+
+/* Slider and Content Styles */
+.slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.nav-dot.active {
+    background-color: #fff;
+}
+
+/* Games and Leagues Table Styles */
+.dropInGames, .leagues {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.gamesHeader, .leaguesHeader {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters {
+    text-align: left;
+    padding: 0 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Footer Styles */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #424A44;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.termsLinks a, .contactInfo span, .socialIcon a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.socialIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.followUs {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+}
+
+.contactInfo img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}

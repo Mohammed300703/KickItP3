@@ -1,0 +1,190 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.signup-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./images/Sign Up.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Header Styles */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #424A44;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-button {
+    background-color: #AE1111;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+    font-family: 'Georama', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 80px;
+    height: 80px;
+}
+
+/* Signup Container Styles */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px;
+}
+
+.signup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input-label {
+    font-family: 'Georama', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 30%;
+}
+
+.input-field {
+    width: 60%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.signup-button {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-family: 'Georama', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    background-color: #424A44;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.terms {
+    font-family: 'Georama', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.terms a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+.socials {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-info .phone, .contact-info .email {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.contact-info img {
+    margin-right: 10px;
+}
+
+.contact-info span {
+    font-family: 'Georama', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
