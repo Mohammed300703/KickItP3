@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/KickItP3/static/css/main.4147378c.css",
-    "main.js": "/KickItP3/static/js/main.3f46bdeb.js",
+    "main.js": "/KickItP3/static/js/main.ccc2640f.js",
     "static/js/453.34ac177d.chunk.js": "/KickItP3/static/js/453.34ac177d.chunk.js",
     "static/media/Book.jpg": "/KickItP3/static/media/Book.9e9ab064f128063b8a39.jpg",
+    "static/media/pitch2.jpg": "/KickItP3/static/media/pitch2.bf619d3b5c39e13c8877.jpg",
     "static/media/league1.jpg": "/KickItP3/static/media/league1.48f9daed6d81847e2754.jpg",
+    "static/media/pitch1.jpg": "/KickItP3/static/media/pitch1.64f106c482bbad1b860b.jpg",
     "static/media/Sign Up.jpg": "/KickItP3/static/media/Sign Up.906272c996ab1c586af8.jpg",
     "static/media/Hero Pitch.jpg": "/KickItP3/static/media/Hero Pitch.6a1eabc2610341fc1be0.jpg",
     "static/media/league2.jpg": "/KickItP3/static/media/league2.a0ef6886d2321a762982.jpg",
@@ -19,11 +21,11 @@
     "static/media/email.png": "/KickItP3/static/media/email.67bda94140af311d041f.png",
     "index.html": "/KickItP3/index.html",
     "main.4147378c.css.map": "/KickItP3/static/css/main.4147378c.css.map",
-    "main.3f46bdeb.js.map": "/KickItP3/static/js/main.3f46bdeb.js.map",
+    "main.ccc2640f.js.map": "/KickItP3/static/js/main.ccc2640f.js.map",
     "453.34ac177d.chunk.js.map": "/KickItP3/static/js/453.34ac177d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4147378c.css",
-    "static/js/main.3f46bdeb.js"
+    "static/js/main.ccc2640f.js"
   ]
 }
