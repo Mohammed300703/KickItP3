@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/KickItP3/static/css/main.4147378c.css",
+    "main.js": "/KickItP3/static/js/main.b122533f.js",
+    "static/js/453.34ac177d.chunk.js": "/KickItP3/static/js/453.34ac177d.chunk.js",
+    "static/media/Book.jpg": "/KickItP3/static/media/Book.9e9ab064f128063b8a39.jpg",
+    "static/media/league1.jpg": "/KickItP3/static/media/league1.48f9daed6d81847e2754.jpg",
+    "static/media/Sign Up.jpg": "/KickItP3/static/media/Sign Up.906272c996ab1c586af8.jpg",
+    "static/media/Hero Pitch.jpg": "/KickItP3/static/media/Hero Pitch.6a1eabc2610341fc1be0.jpg",
+    "static/media/league2.jpg": "/KickItP3/static/media/league2.a0ef6886d2321a762982.jpg",
+    "static/media/Logo.png": "/KickItP3/static/media/Logo.6bb3b3ad9f0d8826542c.png",
+    "static/media/instagram.png": "/KickItP3/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/Phone.png": "/KickItP3/static/media/Phone.0f351ccf53cadfc95d4d.png",
+    "static/media/user.png": "/KickItP3/static/media/user.fce15843dd1549e7e66f.png",
+    "static/media/twitter.png": "/KickItP3/static/media/twitter.7e40f617aaa8eca864bb.png",
+    "static/media/football.png": "/KickItP3/static/media/football.27261734797ec8bca5bb.png",
+    "static/media/ball.png": "/KickItP3/static/media/ball.e4bfeb128d07eb4d3140.png",
+    "static/media/facebook.png": "/KickItP3/static/media/facebook.49e67d43221b6bb1aa86.png",
+    "static/media/email.png": "/KickItP3/static/media/email.67bda94140af311d041f.png",
+    "index.html": "/KickItP3/index.html",
+    "main.4147378c.css.map": "/KickItP3/static/css/main.4147378c.css.map",
+    "main.b122533f.js.map": "/KickItP3/static/js/main.b122533f.js.map",
+    "453.34ac177d.chunk.js.map": "/KickItP3/static/js/453.34ac177d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4147378c.css",
+    "static/js/main.b122533f.js"
+  ]
+}
