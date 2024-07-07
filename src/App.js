@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/KickItP3">  
       <div className="App">
         <Routes>
           <Route path="/" element={<Homepage />} />

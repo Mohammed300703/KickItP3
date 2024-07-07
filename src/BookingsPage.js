@@ -20,7 +20,7 @@ function BookingsPage() {
                 <nav className="navbar">
                     <Link to="/" className="navButton">Home</Link>  
                     <Link to="/games" className="navButton">Games</Link>  
-                    <Link to="/book" className="navButton active">Book</Link>  
+                    <Link to="/bookings" className="navButton active">Book</Link>  
                     <Link to="/signup" className="navButton">Sign Up</Link>  
                     <Link to="/reviews" className="navButton">Reviews</Link>  
                 </nav>

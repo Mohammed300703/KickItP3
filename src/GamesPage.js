@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import './GamesPage.css'; // Ensure styles are correctly linked
+import { Link } from 'react-router-dom'; // Import Link
+import './GamesPage.css';
 import logo from './images/Logo.png';
 import user from './images/user.png';
 import photo1 from './images/Sign Up.jpg';
 import photo2 from './images/Hero Pitch.jpg';
 import photo3 from './images/league1.jpg';
-import phoneIcon from './images/Phone.png'; // Ensure the path is correct
-import emailIcon from './images/email.png'; // Ensure the path is correct
-import facebookIcon from './images/facebook.png'; // Ensure the path is correct
-import instagramIcon from './images/instagram.png'; // Ensure the path is correct
-import twitterIcon from './images/twitter.png'; 
+import phoneIcon from './images/Phone.png';
+import emailIcon from './images/email.png';
+import facebookIcon from './images/facebook.png';
+import instagramIcon from './images/instagram.png';
+import twitterIcon from './images/twitter.png';
+import pitch1 from './images/pitch1.jpg';
+import pitch2 from './images/pitch2.jpg';
 
 function GamesPage() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -36,10 +39,11 @@ function GamesPage() {
                     <img src={logo} width="100" height="100" alt="KickIt Logo" />
                 </div>
                 <nav className="navbar">
-                    <a href="/" className="navButton">Home</a>
-                    <a href="/games" className="navButton active">Games</a>
-                    <a href="/bookings" className="navButton">Book</a>
-                    <a href="/signup" className="navButton">Sign Up</a>
+                    <Link to="/" className="navButton">Home</Link>
+                    <Link to="/games" className="navButton active">Games</Link>
+                    <Link to="/bookings" className="navButton">Book</Link>
+                    <Link to="/signup" className="navButton">Sign Up</Link>
+                    <Link to="/reviews" className="navButton">Reviews</Link>
                 </nav>
                 <div className="userIcon">
                     <img src={user} width="100" height="100" alt="User Icon" />
@@ -63,13 +67,14 @@ function GamesPage() {
     );
 }
 
+
 function GamesTable() {
     const [filterOne, setFilterOne] = useState('All');
     const [filterTwo, setFilterTwo] = useState('All');
 
     const gamesData = [
-        { dateTime: '2023-07-01 15:00', location: 'Field A', details: 'Friendly Match', spots: 10, level: 'Beginner' },
-        { dateTime: '2023-07-02 16:00', location: 'Field B', details: 'Tournament', spots: 8, level: 'Intermediate' },
+        { dateTime: '2023-07-01 15:00', location: 'Field A', details: 'Friendly Match', spots: 10, level: 'Beginner', players: ['John Doe', 'Jane Smith'], image: pitch1 },
+        { dateTime: '2023-07-02 16:00', location: 'Field B', details: 'Tournament', spots: 8, level: 'Intermediate', players: ['Alice Brown', 'Bob Johnson'], image: pitch2 },
     ];
 
     const handleFilterChangeOne = (e) => {
@@ -105,16 +110,21 @@ function GamesTable() {
                         <th>Details</th>
                         <th>Spots</th>
                         <th>Level</th>
+                        <th>Players</th>
                     </tr>
                 </thead>
                 <tbody>
                     {gamesData.map((game, index) => (
                         <tr key={index}>
                             <td>{game.dateTime}</td>
-                            <td>{game.location}</td>
+                            <td>
+                                {game.location}
+                                <img src={game.image} alt={`Location of ${game.location}`} width="100" height="100" style={{ display: 'block', marginTop: '10px' }} />
+                            </td>
                             <td>{game.details}</td>
                             <td>{game.spots}</td>
                             <td>{game.level}</td>
+                            <td>{game.players.join(', ')}</td>
                         </tr>
                     ))}
                 </tbody>

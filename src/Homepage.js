@@ -45,31 +45,31 @@ const Homepage = () => {
             </section>
 
             <Container className="league-cards my-5">
-                <Row>
-                    <Col md={6}>
-                        <Card className="league-card">
-                            <Card.Img variant="top" src={league1} />
-                            <Card.Body>
-                                <Card.Title>Join a league of your level today</Card.Title>
-                                <Card.Text>
-                                    <a href="#">Find More about our leagues here</a>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={6}>
-                        <Card className="league-card">
-                            <Card.Img variant="top" src={league2} />
-                            <Card.Body>
-                                <Card.Title>Register your player profile</Card.Title>
-                                <Card.Text>
-                                    <a href="#">Register player</a>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            </Container>
+    <Row>
+        <Col md={6}>
+            <Card className="league-card">
+                <Card.Img variant="top" src={league1} />
+                <Card.Body>
+                    <Card.Title>Join a league of your level today</Card.Title>
+                    <Card.Text>
+                        <Link to="/games">Find More about our leagues here</Link>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
+        <Col md={6}>
+            <Card className="league-card">
+                <Card.Img variant="top" src={league2} />
+                <Card.Body>
+                    <Card.Title>Register your player profile</Card.Title>
+                    <Card.Text>
+                        <Link to="/signup">Register player</Link>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
+    </Row>
+</Container>
 
             <footer className="footer bg-dark text-white text-center py-4">
                 <Container>

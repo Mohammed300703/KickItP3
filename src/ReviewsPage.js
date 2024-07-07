@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import './ReviewsPage.css';
 import logo from './images/Logo.png';
 import user from './images/user.png';
@@ -14,7 +15,7 @@ function ReviewsPage() {
     const [pitchRating, setPitchRating] = useState(0);
     const [friendlinessRating, setFriendlinessRating] = useState(0);
     const [overallRating, setOverallRating] = useState(0);
-    const [levelRating, setLevelRating ] = useState(0);
+    const [levelRating, setLevelRating] = useState(0);
     const createRatingHandler = (setter) => (rate) => {
         setter(rate);
     };
@@ -41,10 +42,10 @@ function ReviewsPage() {
                     <img src={logo} width="100" height="100" alt="KickIt Logo" />
                 </div>
                 <nav className="navbar">
-                    <a href="/" className="navButton">Home</a>
-                    <a href="/games" className="navButton">Games</a>
-                    <a href="/book" className="navButton">Book</a>
-                    <a href="/signup" className="navButton">Sign Up</a>
+                    <Link to="/" className="navButton">Home</Link>
+                    <Link to="/games" className="navButton">Games</Link>
+                    <Link to="/bookings" className="navButton">Book</Link>
+                    <Link to="/signup" className="navButton">Sign Up</Link>
                 </nav>
                 <div className="userIcon">
                     <img src={user} width="100" height="100" alt="User Icon" />
@@ -67,8 +68,8 @@ function ReviewsPage() {
             </div>
             <footer className="footer">
                 <div className="termsLinks">
-                    <a href="/terms-of-service">Terms Of Service</a>
-                    <a href="/privacy-policy">Privacy Policy</a>
+                    <Link to="/terms-of-service">Terms Of Service</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                 </div>
                 <div className="socials">
                     <span className="followUs">Follow Us</span>
